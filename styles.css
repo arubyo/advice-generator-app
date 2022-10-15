@@ -1,0 +1,59 @@
+html, body{
+    height:100%;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height:100%;
+}
+.card{
+    width: 540px;
+    height: 330px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  border-radius: 16px;
+  background-color: hsl(217, 19%, 24%);
+  font-family: 'Manrope', sans-serif;
+
+}
+
+.card-body{
+    color:  hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+.card-heading{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-weight: normal;
+    text-align: center;
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.btn-dice{
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    width: 58px;;
+    height:58px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.btn-dice img{
+    max-height: 100%;
+   max-width: 100%;
+}
