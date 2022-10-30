@@ -11,12 +11,12 @@ html, body{
     height:100%;
 }
 .card{
-    width: 540px;
-    height: 330px;
+    width: 33.75rem;
+    height: 20.625rem;
     display: flex;  
     justify-content: center;
     align-items: center;
-  border-radius: 16px;
+  border-radius: 1rem;
   background-color: hsl(217, 19%, 24%);
   font-family: 'Manrope', sans-serif;
 
@@ -24,36 +24,63 @@ html, body{
 
 .card-body{
     color:  hsl(193, 38%, 86%);
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .card-heading{
     color: hsl(150, 100%, 66%);
     text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 4px;
+    font-size: 0.625rem;
+    letter-spacing: 0.25rem;
     font-weight: normal;
     text-align: center;
+    padding-top:1.25rem;
 }
+.card-text{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: center;
+}
+
 .card-footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    color: none !important;
+    background-color: transparent !important;
+    border-top:none;
+    position: relative;
+   
+}
+.card-divide{
+    position: relative;
+    bottom:3.75rem;
 }
 .btn-dice{
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
-    width: 58px;;
-    height:58px;
+    width: 3.625rem;
+    height: 3.625rem;
     text-align: center;
     align-content: center;
     align-items: center;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: -1.875rem;  
 }
 .btn-dice img{
     max-height: 100%;
    max-width: 100%;
+}
+
+.btn-dice img:hover{
+    transform: rotate(360deg);
+}
+
+.btn-dice:hover{
+    box-shadow: 0 0px 15px  hsl(150, 100%, 66%);
 }
