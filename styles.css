@@ -77,10 +77,39 @@ html, body{
    max-width: 100%;
 }
 
-.btn-dice img:hover{
-    transform: rotate(360deg);
-}
 
 .btn-dice:hover{
     box-shadow: 0 0px 15px  hsl(150, 100%, 66%);
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 320px;
+        
+    }
+
+
+    .card-divide{
+        width: 90%;
+    }
+
+    .card-text{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 80%;
+    
+    }
+.card-divide{
+    bottom: 1.75rem;
+
+}
+    .btn-dice{
+        position: absolute;
+        bottom: -3.5rem;  
+    }
 }
