@@ -1,115 +1,110 @@
-html, body{
-    height:100%;
-    background-color: hsl(218, 23%, 16%);
+html,
+body {
+  height: 100%;
+  background-color: hsl(218, 23%, 16%);
 }
 
 .container-fluid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
 }
-.card{
-    width: 33.75rem;
-    height: 20.625rem;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
+footer {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 33.75rem;
+  height: 20.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 1rem;
   background-color: hsl(217, 19%, 24%);
-  font-family: 'Manrope', sans-serif;
-
+  font-family: "Manrope", sans-serif;
+  margin: 0 auto;
+  float: none;
+  position: relative;
+  max-width: fit-content;
 }
 
-.card-body{
-    color:  hsl(193, 38%, 86%);
-    font-size: 1.75rem;
+.card-body {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.75rem;
+  width: inherit;
 }
 
-.card-heading{
-    color: hsl(150, 100%, 66%);
-    text-transform: uppercase;
-    font-size: 0.625rem;
-    letter-spacing: 0.25rem;
-    font-weight: normal;
-    text-align: center;
-    padding-top:1.25rem;
-}
-.card-text{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    text-align: center;
-}
-
-.card-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    color: none !important;
-    background-color: transparent !important;
-    border-top:none;
-    position: relative;
-   
-}
-.card-divide{
-    position: relative;
-    bottom:3.75rem;
-}
-.btn-dice{
-    background-color: hsl(150, 100%, 66%);
-    border-radius: 50%;
-    width: 3.625rem;
-    height: 3.625rem;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: -1.875rem;  
-}
-.btn-dice img{
-    max-height: 100%;
-   max-width: 100%;
+.card-heading {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  font-size: 0.825rem;
+  letter-spacing: 0.25rem;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 3.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
-
-.btn-dice:hover{
-    box-shadow: 0 0px 15px  hsl(150, 100%, 66%);
+.card-text {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-align: center;
+  padding-top: 4rem;
 }
 
+.card-footer {
+  background-color: transparent !important;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -2rem;
+}
+
+.btn-dice {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  width: 3.625rem;
+  height: 3.625rem;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.btn-dice img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.btn-dice:hover {
+  box-shadow: 0 0px 15px hsl(150, 100%, 66%);
+}
+.attribution {
+  color: hsl(150, 100%, 66%);
+}
 @media only screen and (max-width: 600px) {
-    .card {
-        width: 90%;
-        margin-left: 10%;
-        margin-right: 10%;
-        flex-wrap: wrap;
-        flex-direction: row;
-        min-height: 320px;
-        
-    }
+  .card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 320px;
+  }
 
-
-    .card-divide{
-        width: 90%;
-    }
-
-    .card-text{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        font-size: 80%;
-    
-    }
-.card-divide{
-    bottom: 1.75rem;
-
-}
-    .btn-dice{
-        position: absolute;
-        bottom: -3.5rem;  
-    }
+  .card-text {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 70%;
+    padding-top: 0;
+  }
 }
